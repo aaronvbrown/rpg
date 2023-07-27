@@ -7,9 +7,12 @@ export default class Character {
     this.level = 1;
     this.inventory = [];
   }
-
+  
   attack(ops) {
     const damage = this.strength * this.level;
     ops.health -= damage;
+  }
+  
+  levelUp() {
   }
 }
