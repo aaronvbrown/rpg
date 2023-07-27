@@ -5,7 +5,7 @@ export default class Character {
     this.intelligence = intelligence;
     this.health = health
     this.level = 1;
-    this.inventory = [];
+    this.inventory = ['orb'];
   }
   
   attack(ops) {
@@ -18,5 +18,9 @@ export default class Character {
     this.intelligence++;
     this.health++;
     this.level++;
+  }
+  
+  addToInventory(){
+
   }
 }
