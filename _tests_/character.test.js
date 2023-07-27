@@ -39,7 +39,7 @@ describe("Character", () => {
   test("should be able to level up", () => {
     character.levelUp();
     expect(character.strength).toEqual(6);
-    expect(character.intelligience).toEqual(6);
+    expect(character.intelligence).toEqual(6);
     expect(character.health).toEqual(6);
     expect(character.level).toEqual(2);
   })

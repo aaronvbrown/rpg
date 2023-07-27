@@ -14,5 +14,9 @@ export default class Character {
   }
   
   levelUp() {
+    this.strength++;
+    this.intelligence++;
+    this.health++;
+    this.level++;
   }
 }
