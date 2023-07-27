@@ -9,9 +9,6 @@ describe("Character", () => {
     return character;
   });
   
-  // beforeEach(() => {
-  //   return ops;
-  // });
   
   test("should have a name", () => {
     expect(character.name).toEqual("Neo");
@@ -29,10 +26,22 @@ describe("Character", () => {
     expect(character.health).toEqual(5);
   });
   
+  test("should have a level attribute", () => {
+    expect(character.level).toEqual(1);
+  });
+  
   test("should be able to attack the ops", () => {
     const ops = new Character("Killer Bunny", 5, 5, 5);
     character.attack(ops);
     expect(ops.health).toEqual(0);
   });
+
+  test("should be able to level up", () => {
+    character.levelUp();
+    expect(character.strength).toEqual(6);
+    expect(character.intelligience).toEqual(6);
+    expect(character.health).toEqual(6);
+    expect(character.level).toEqual(2);
+  })
 
 });
