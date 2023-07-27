@@ -46,7 +46,6 @@ describe("Character", () => {
 
   test("should be able to add to inventory", () => {
     character.addToInventory("sniper");
-    expect(character.inventory.includes("sniper"));
     expect(character.inventory.length).toEqual(2);
   })
 });

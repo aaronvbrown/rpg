@@ -20,7 +20,7 @@ export default class Character {
     this.level++;
   }
   
-  addToInventory(){
-
+  addToInventory(item){
+    this.inventory.push(item);
   }
 }
