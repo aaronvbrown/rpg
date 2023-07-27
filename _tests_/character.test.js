@@ -21,4 +21,10 @@ describe("Character", () => {
     expect(character.intelligence).toEqual(5);
   });
 
+  test("should be able to attack a monster", () => {
+    const monster = new Character("Killer Bunny", 3, 3);
+    character.attack(monster);
+    expect(monster.health).toEqual(3);
+  });
+  
 });
